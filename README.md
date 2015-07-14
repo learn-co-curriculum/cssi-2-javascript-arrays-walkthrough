@@ -37,28 +37,57 @@ Notice that the index starts at 0. The first item in an array has index 0, the s
 
 One way to think about this is that the computer counts indexes the way we count ages. We start at age '0' and only after our first full year do we turn '1'. In the same way, the first element gets index 0, and the second element gets index 1.
 
+![example of array indexing](https://newcircle.com/static/bookshelf/ruby_tutorial/array_indexing.png)
+
 We saw this same index numbering when we used methods to identify characters in a string earlier. In fact, you can think of a string like an array of characters.
 
-Let’s initialize an array for our students:
+### Creating Arrays
+An array can contain any combination of data types, strings, integers, floats, even other arrays.
+
+You can create arrays using two different types of syntax.
+* an array literal, uses square brackets `[]` : `var my_array = []`
+```
+var array1 = [1,3,5,7,9]      // an array with 5 elements
+var array2 = [false,'CSSI',[2]]  // each element can be any datatype!
+```
+
+* the Array constructor, uses `new Array` with parentheses `()`: `var my_array = newArray()
+
+```
+var array3 = new Array(2,'pickle',true,8,900)  // an array with 5 elements
+var array4 = new Array(17)        // an empty array of length 17
+var array6 = new Array()           // an empty array of length 0
+```
+
+### Students Array
+Let’s initialize an array of students:
 ```
 >var students= ['Tamara','Georgia','Norah','Joseph','Nicki','Rob']
 >students
 ["Tamara", "Georgia", "Norah", "Joseph", "Nicki", "Rob"]
 ```
-Square brackets `[ ]` denote the contents of an array. An array can contain any combination of data types.  An array can be stored in a variable just like a number or string.
+
 You'll notice that we don't write the index of the elements anywhere. The computer automatically makes an index starting at 0 and incrementing by 1 for each element.
 
 ## Accessing and Modifying Elements
-Now let’s say we need to go shopping to restock the bathroom, so we want to be able to access the different elements in our array. Try this out. What does it do?
+To access an element, you need to call the name of the array and the index of that element.
 ```
 >students[3]
+< "Joseph"
 ```
-Why did it return ‘Joseph’ ?
+Why did it return ‘Joseph’ ? Well Joseph is 4th name, but remember, indexing starts with 0. 
+
+```
+students[0] is the first element
+students[1] is the second element
+students[2] is the third element
+```
 
 We talked about how to reassign variables earlier. What if we wanted to reassign an element in an array? What if Joseph dropped the class, and instead we had Barry?
 ```
 >students[3] = 'Barry'
 >students[3]
+< "Barry"
 ```
 The array element at index three has been changed!
 
@@ -81,5 +110,3 @@ var lastName = names.pop()
 `pop` will remove the last item in an array and return it. Since we just added "Alfred" to the end, that is what names.pop() returns.
 
 Here are some other cool methods to experiment with: .sort(), .splice(), .split()
-
-## Mini Lab: Manipulating arrays
