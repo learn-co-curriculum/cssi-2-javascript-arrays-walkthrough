@@ -45,19 +45,21 @@ We saw this same index numbering when we used methods to identify characters in 
 An array can contain any combination of data types, strings, integers, floats, even other arrays.
 
 You can create arrays using two different types of syntax.
-* an array literal, uses square brackets `[]` : `var my_array = []`
+* **The Good Way:** an array literal, uses square brackets `[]` : `var my_array = []`
 ```
 var array1 = [1,3,5,7,9]      // an array with 5 elements
 var array2 = [false,'CSSI',[2]]  // each element can be any datatype!
 ```
 
-* the Array constructor, uses `new Array` with parentheses `()`: `var my_array = newArray()
+* **The Bad Way:** the Array constructor, uses `new Array` with parentheses `()`: `var my_array = newArray()
 
 ```
 var array3 = new Array(2,'pickle',true,8,900)  // an array with 5 elements
 var array4 = new Array(17)        // an empty array of length 17
 var array6 = new Array()           // an empty array of length 0
 ```
+
+Generally,  you should ALWAYS use the array literal with brackets when creating arrays.
 
 ### Students Array
 Let’s initialize an array of students:
