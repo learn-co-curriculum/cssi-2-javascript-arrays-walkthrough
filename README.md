@@ -1,8 +1,4 @@
----
-tags: cssi, javascript
-level: 1
-languages: javascript
----
+
 #Arrays
 After the lesson, you'll understand:
 + What an array is
