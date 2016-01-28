@@ -109,4 +109,4 @@ var lastName = names.pop()
 
 Here are some other cool methods to experiment with: .sort(), .splice(), .split()
 
-<a href='https://learn.co/lessons/cssi-2-javascript-arrays-walkthrough' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/cssi-2-javascript-arrays-walkthrough' title='Arrays'>Arrays</a> on Learn.co and start learning to code for free.</p>
